@@ -47,6 +47,19 @@ public class Threads {
             for (int i = 0; i < 100; i++) {
                 System.out.println("Hello");
             }
-        }
+        };
     }
 }
+
+
+/*
+ * Thread States
+ *  New ----> Runnable    <---(notify)
+ *              |               |
+ *              |            Waiting 
+ *              |               |
+ *            Running ------>(sleep, wait)
+ *              |
+ *              |   (stop)
+ *              ------------> Dead
+ */
